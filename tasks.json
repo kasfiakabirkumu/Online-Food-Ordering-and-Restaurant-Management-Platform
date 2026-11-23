@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run FoodHub (PHP server)",
+      "type": "shell",
+      "command": "php -S localhost:8000 -t public",
+      "windows": { "command": "if (Get-Command php -ErrorAction SilentlyContinue) { php -S localhost:8000 -t public } else { & 'C:\\xampp\\php\\php.exe' -S localhost:8000 -t public }" },
+      "isBackground": true,
+      "problemMatcher": [],
+      "group": { "kind": "build", "isDefault": true }
+    }
+  ]
+}
